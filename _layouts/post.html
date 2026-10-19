@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% assign c = page.categories | first %}
+{% assign course = site.courses[c] %}
+<article class="post" style="--accent: {{ course.color }}">
+  <header class="post-hero">
+    <div class="wrap narrow">
+      <a class="back" href="{{ '/' | append: c | append: '/' | relative_url }}">&larr; {{ course.name }} projects</a>
+      <h1>{{ page.title }}</h1>
+      <p class="meta">
+        By {{ page.authors | join: ", " }} · {{ page.date | date: "%B %Y" }}
+      </p>
+      {% if page.tags.size > 0 %}
+      <ul class="tags">{% for t in page.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+      {% endif %}
+      {% if page.repo or page.notebook %}
+      <p class="links">
+        {% if page.repo %}<a href="{{ page.repo }}">Code repository</a>{% endif %}
+        {% if page.notebook %}<a href="{{ page.notebook }}">Notebook</a>{% endif %}
+      </p>
+      {% endif %}
+    </div>
+  </header>
+  <div class="wrap narrow post-content">
+    {% if page.placeholder %}
+    <div class="notice">
+      <strong>Placeholder post.</strong> This is an example of how a project write-up will look. It will be replaced by a real student project at the end of the course.
+    </div>
+    {% endif %}
+    {{ content }}
+  </div>
+</article>

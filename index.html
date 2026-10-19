@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Showcase</p>
+    <h1>Data science projects by our Python students</h1>
+    <p class="lead">At the end of each course, students publish their final data science project here as a short blog post: the question they asked, the data they used, what they found, and the code behind it.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="course-cards">
+    {% for pair in site.courses %}
+    {% assign key = pair[0] %}{% assign course = pair[1] %}
+    {% assign n = site.categories[key] | size %}
+    <a class="course-card" href="{{ '/' | append: key | append: '/' | relative_url }}" style="--accent: {{ course.color }}">
+      <h2>{{ course.name }}</h2>
+      <p>{{ course.tagline }}</p>
+      <span class="count">{{ n }} project{% if n != 1 %}s{% endif %} &rarr;</span>
+    </a>
+    {% endfor %}
+  </div>
+
+  <h2 class="section-title">Latest projects</h2>
+  <div class="grid">
+    {% for post in site.posts limit: 6 %}{% include post-card.html post=post %}{% endfor %}
+  </div>
+</section>

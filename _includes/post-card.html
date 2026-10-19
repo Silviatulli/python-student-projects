@@ -1,0 +1,18 @@
+{% assign c = include.post.categories | first %}
+{% assign course = site.courses[c] %}
+<article class="card" style="--accent: {{ course.color }}">
+  <a class="card-link" href="{{ include.post.url | relative_url }}">
+    <div class="card-banner">
+      <span class="card-course">{{ course.name }}</span>
+      {% if include.post.placeholder %}<span class="badge">Placeholder</span>{% endif %}
+    </div>
+    <div class="card-body">
+      <h3>{{ include.post.title }}</h3>
+      <p class="meta">{{ include.post.authors | join: ", " }}</p>
+      <p>{{ include.post.summary }}</p>
+      {% if include.post.tags.size > 0 %}
+      <ul class="tags">{% for t in include.post.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+      {% endif %}
+    </div>
+  </a>
+</article>

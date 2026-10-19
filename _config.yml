@@ -1,0 +1,29 @@
+title: Python Student Projects
+description: Data science projects by students of the Basic and Advanced Python courses.
+baseurl: "/python-student-projects"
+url: "https://silviatulli.github.io"
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:year/:title/
+
+courses:
+  basic:
+    name: Basic Python
+    tagline: First steps into data science — cleaning, exploring and visualising real data with pandas and matplotlib.
+    color: "#2f7d6d"
+  advanced:
+    name: Advanced Python
+    tagline: End-to-end data science pipelines — modelling, evaluation and reproducible code.
+    color: "#3b5bdb"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - _templates

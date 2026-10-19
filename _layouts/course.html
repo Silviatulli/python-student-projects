@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign course = site.courses[page.course] %}
+<section class="course-hero" style="--accent: {{ course.color }}">
+  <div class="wrap">
+    <p class="eyebrow">Course</p>
+    <h1>{{ course.name }}</h1>
+    <p class="lead">{{ course.tagline }}</p>
+  </div>
+</section>
+
+<section class="wrap">
+  {{ content }}
+  {% assign posts = site.categories[page.course] %}
+  {% if posts and posts.size > 0 %}
+  <div class="grid">
+    {% for post in posts %}{% include post-card.html post=post %}{% endfor %}
+  </div>
+  {% else %}
+  <p class="empty">No projects yet — check back at the end of the course!</p>
+  {% endif %}
+</section>
