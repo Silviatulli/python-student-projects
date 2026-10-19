@@ -4,7 +4,9 @@ categories: advanced
 authors: ['Student F', 'Student G']
 summary: "A full ML pipeline — feature engineering, cross-validation and model interpretation — on real estate transaction data."
 tags: ['scikit-learn', 'regression', 'SHAP']
-image: /assets/img/placeholders/housing.png
+image: /assets/img/placeholders/housing.jpg
+image_credit: "Photo: Roger Templeman / Wikimedia Commons, CC BY-SA 2.0"
+image_credit_url: https://commons.wikimedia.org/wiki/File:Row_of_houses_on_Oxford_Street_-_geograph.org.uk_-_5663871.jpg
 placeholder: true
 ---
 

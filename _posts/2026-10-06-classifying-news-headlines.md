@@ -4,7 +4,9 @@ categories: advanced
 authors: ['Student I', 'Student J']
 summary: "Text classification from bag-of-words baselines to transformer embeddings, with a careful error analysis."
 tags: ['NLP', 'classification', 'PyTorch']
-image: /assets/img/placeholders/news-headlines.png
+image: /assets/img/placeholders/news-headlines.jpg
+image_credit: "Photo: Burgermac from Pornichet, France / Wikimedia Commons, CC BY 2.0"
+image_credit_url: https://commons.wikimedia.org/wiki/File:2007_news_kiosk_Paris_1406808950.jpg
 placeholder: true
 ---
 

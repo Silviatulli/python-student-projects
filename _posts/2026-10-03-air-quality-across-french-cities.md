@@ -4,7 +4,9 @@ categories: basic
 authors: ['Student D', 'Student E']
 summary: "Comparing pollution levels between cities and seasons using open government data."
 tags: ['open data', 'groupby', 'seaborn']
-image: /assets/img/placeholders/air-quality.png
+image: /assets/img/placeholders/air-quality.jpg
+image_credit: "Photo: Eltiempo10 / Wikimedia Commons, CC BY-SA 4.0"
+image_credit_url: https://commons.wikimedia.org/wiki/File:Salt_Lake_City_smog_haze_skyline_01.jpg
 placeholder: true
 ---
 

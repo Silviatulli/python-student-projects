@@ -4,7 +4,9 @@ categories: basic
 authors: ['Student C']
 summary: "Cleaning and exploring a movie ratings dataset to look for links between genre, budget and audience scores."
 tags: ['pandas', 'data cleaning', 'visualisation']
-image: /assets/img/placeholders/movies.png
+image: /assets/img/placeholders/movies.jpg
+image_credit: "Photo: Nathan from London, United Kingdom / Wikimedia Commons, CC BY-SA 2.0"
+image_credit_url: https://commons.wikimedia.org/wiki/File:Gaumont_State_Cinema_Kilburn_2013-09-21_11.55.59_(by_Nathan).jpg
 placeholder: true
 ---
 

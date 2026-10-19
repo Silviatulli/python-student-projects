@@ -4,7 +4,9 @@ categories: advanced
 authors: ['Student H']
 summary: "Unsupervised learning on audio features to discover listener profiles, with a reproducible packaged codebase."
 tags: ['clustering', 'PCA', 'packaging']
-image: /assets/img/placeholders/music-clusters.png
+image: /assets/img/placeholders/music-clusters.jpg
+image_credit: "Photo: Richard Humphrey / Wikimedia Commons, CC BY-SA 2.0"
+image_credit_url: https://commons.wikimedia.org/wiki/File:Heritage_Live_concert_crowd_and_stage_at_Sandringham_2023_-_geograph.org.uk_-_7586057.jpg
 placeholder: true
 ---
 

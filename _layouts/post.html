@@ -23,6 +23,12 @@ layout: default
     </div>
   </header>
   <div class="wrap narrow post-content">
+    {% if page.image %}
+    <figure class="post-cover">
+      <img src="{{ page.image | relative_url }}" alt="">
+      {% if page.image_credit %}<figcaption>{% if page.image_credit_url %}<a href="{{ page.image_credit_url }}">{{ page.image_credit }}</a>{% else %}{{ page.image_credit }}{% endif %}</figcaption>{% endif %}
+    </figure>
+    {% endif %}
     {% if page.placeholder %}
     <div class="notice">
       <strong>Placeholder post.</strong> This is an example of how a project write-up will look. It will be replaced by a real student project at the end of the course.

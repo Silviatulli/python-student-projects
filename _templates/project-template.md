@@ -4,7 +4,8 @@ categories: basic          # or: advanced
 authors: ["First Student", "Second Student"]
 summary: "One or two sentences describing your project — shown on the project card."
 tags: [pandas, visualisation]
-image: /assets/img/your-project-name/cover.png   # cover image shown on the project card
+image: /assets/img/your-project-name/cover.jpg   # cover image shown on the card and at the top of the post
+image_credit: "Photo: Author name, licence"        # required if the photo is not yours
 repo: https://github.com/your-username/your-project      # optional
 notebook:                                                # optional link to a notebook
 ---
