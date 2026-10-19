@@ -1,5 +1,5 @@
 :root {
-  --bg: #fafaf8;
+  --bg: #ffffff;
   --surface: #ffffff;
   --text: #1c1e21;
   --muted: #5f6368;
@@ -9,27 +9,14 @@
   --notice: #fff6db;
   --notice-border: #f0d78c;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #141517;
-    --surface: #1c1e21;
-    --text: #e8e8e6;
-    --muted: #a0a3a8;
-    --border: #2e3035;
-    --code-bg: #25272b;
-    --brand: #8ea4ff;
-    --notice: #2d2716;
-    --notice-border: #5c4c1c;
-  }
-}
-
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
+html { color-scheme: light; }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 16px/1.65 "Inter", system-ui, -apple-system, sans-serif;
+  font: 16px/1.65 "Spectral", Georgia, serif;
 }
 a { color: var(--brand); }
 img { max-width: 100%; height: auto; border-radius: 8px; }
