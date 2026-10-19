@@ -4,6 +4,7 @@ categories: advanced
 authors: ['Student F', 'Student G']
 summary: "A full ML pipeline — feature engineering, cross-validation and model interpretation — on real estate transaction data."
 tags: ['scikit-learn', 'regression', 'SHAP']
+image: /assets/img/placeholders/housing.png
 placeholder: true
 ---
 

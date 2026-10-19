@@ -4,6 +4,7 @@ categories: basic
 authors: ['Student D', 'Student E']
 summary: "Comparing pollution levels between cities and seasons using open government data."
 tags: ['open data', 'groupby', 'seaborn']
+image: /assets/img/placeholders/air-quality.png
 placeholder: true
 ---
 

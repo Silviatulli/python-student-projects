@@ -4,6 +4,7 @@ categories: basic
 authors: ['Student A', 'Student B']
 summary: "How does bike-sharing usage change with weather and time of day? A first exploration with pandas and matplotlib."
 tags: ['pandas', 'matplotlib', 'time series']
+image: /assets/img/placeholders/bike-sharing.png
 placeholder: true
 ---
 

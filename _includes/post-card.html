@@ -3,8 +3,11 @@
 <article class="card" style="--accent: {{ course.color }}">
   <a class="card-link" href="{{ include.post.url | relative_url }}">
     <div class="card-banner">
-      <span class="card-course">{{ course.name }}</span>
-      {% if include.post.placeholder %}<span class="badge">Placeholder</span>{% endif %}
+      {% if include.post.image %}<img src="{{ include.post.image | relative_url }}" alt="" loading="lazy">{% endif %}
+      <div class="card-labels">
+        <span class="card-course">{{ course.name }}</span>
+        {% if include.post.placeholder %}<span class="badge">Placeholder</span>{% endif %}
+      </div>
     </div>
     <div class="card-body">
       <h3>{{ include.post.title }}</h3>

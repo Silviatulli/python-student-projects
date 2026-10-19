@@ -4,6 +4,7 @@ categories: basic
 authors: ['Student C']
 summary: "Cleaning and exploring a movie ratings dataset to look for links between genre, budget and audience scores."
 tags: ['pandas', 'data cleaning', 'visualisation']
+image: /assets/img/placeholders/movies.png
 placeholder: true
 ---
 
